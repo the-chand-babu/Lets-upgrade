@@ -9,7 +9,8 @@ cout<<endl<<"enter a numver : ";
 cin>>n;
 
 if(n>100){
-    cout<<endl<< "hundered se aage ka print nahi kar sakte";
+    // cout<<endl<< "hundered se aage ka print nahi kar sakte";
+    
     
 }else{
 
