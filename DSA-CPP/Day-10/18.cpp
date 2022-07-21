@@ -1,20 +1,20 @@
+//find duplicate 
+
 #include<iostream>
 using namespace std;
-int main (){
-    int ans=0;
-    int arr[5]={1,2,5,2,6};
-    for(int i=0; i<5-1; i++){
-for(int j=i+1;j<5;j++){
-    if(arr[i]==arr[j]){
-        
-ans=ans+arr[i];
-break;
-    }
-    
-
+int findduplicate (int arr[],int n){
+int ans=0;
+for(int i=0; i < n; i++){
+    ans=ans^arr[i];
 }
-    }
-    cout<<endl<<ans;
-    
-return 0;
+for(int i=0; i<n-1; i++){
+    ans=ans^arr[i];
+}
+return ans;
+}
+int main (){
+    int arr[5]={1,2,3,4,3};
+int ans=findduplicate(arr,5);
+cout<<endl<<ans;
+
 }

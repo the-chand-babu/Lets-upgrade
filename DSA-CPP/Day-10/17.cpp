@@ -2,7 +2,7 @@
 using namespace std;
 void swapping_func (int arr[], int n){
     for(int i=0; i<n; i=i+2){
-        if(arr[i+1]<n){
+        if(i+1<n){
         swap(arr[i],arr[i+1]);
 }
     }
