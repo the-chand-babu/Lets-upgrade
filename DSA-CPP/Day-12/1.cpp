@@ -3,27 +3,24 @@
 #include<iostream>
 using namespace std;
 
-int reverse (int n){
-   int sum=0,rem=0;
+void reverse (int n,int*s,int *r){
+   int rem=0;
    while (n>0)
    {
     /* code */
     rem=n%10;
-    sum=sum+rem;
+    *r=*r*10+rem;
+    *s=*s+rem;
     n=n/10;
-
    }
-   int *p=&sum;
    
-  
-   return *p;
-    
 }
 
 int main (){
     
-    int n;
+    int n,sum=0,rev=0;
     cout<<"enter a number here : ";
     cin>>n;
-    cout<<endl<<reverse(n);
+    reverse (n,&sum,&rev);
+    cout<<sum<<" "<<rev;
 }

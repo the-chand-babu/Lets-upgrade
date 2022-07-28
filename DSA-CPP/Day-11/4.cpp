@@ -31,3 +31,4 @@ for ( i = 0; i < n; i ++){
     int arr[5][5];
     pascal (arr , 5);
  }
+///// 
