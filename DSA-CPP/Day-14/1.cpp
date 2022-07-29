@@ -16,6 +16,7 @@ void isprime(int n, int *p){
             break;
         }else{
             cout<<"this is a prime number : "<<n;
+            break;
         }
     }
 }
