@@ -17,7 +17,11 @@ int main (){
     cout<<a<<endl;
     cout<<*a<<endl;
     cout<<a[0]<<endl;
-    // cout<<&a[0]<<endl;
+    cout<<a+1;
+    cout<<*(a+1);
+    cout<<a[1];
+
+    
 
     
 
