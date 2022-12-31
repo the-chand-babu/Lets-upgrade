@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background : rgb(45, 143, 176);
+}
+.logo{
+    width: 200px;
+    margin-left: 8%;
+}
+nav{
+    display: flex;
+    width: 84%;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(218, 209, 225);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+nav ul li a:hover{
+    color: #914147;
+}
+.detail{
+    margin: 8% 0 0 8%;
+}
+.detail h1{
+    font-size: 50px;
+    color: #632d3f;
+    margin-bottom:20px ;
+}
+span{
+    color: #52194e;
+}
+.detail p{
+    color: rgb(83, 20, 103);
+    line-height: 22px;
+}
+.detail a{
+background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(226, 80, 80);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 3px;
+}
+.img{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+        }
+.img img{
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    left: 60%;
+    
+    border-radius: 50%;
+    transform: translate(-50%);
+    transition: linear 2s, left 1s;
+    
+}
+.img:hover .boy{
+    left: 45%;
+}
