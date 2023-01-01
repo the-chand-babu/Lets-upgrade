@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:ital,wght@0,100;0,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    /* any theme will not come over this page from out side */
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+}
+#close-btn>span{
+    background: orange;
+    width: 2.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+html{
+    font-size: 15px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins,sans-serif;
+    font-size: 0.8rem;
+    /* background-color: rgba(166, 180, 180, 0.795); */
+    background-color: #BFC7BD;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 0.8rem;
+}
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    grid-template-columns: 15rem auto 23rem;
+    grid-gap: 1.7rem;
+    /* background-color: pink; */
+   
+}
+.aside{
+  height: 100%;
+  width: 100%;
+    /* background: grey; */
+
+}
+.aside .top{
+    background-color: #F1E0C5;
+/* background: white; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 1.5rem;
+/* background-color: aqua; */
+}
+.logo{
+    width:30%;
+}
+
+.logo-text{
+    color: #f60;
+}
+.aside .top .logo{
+    display: flex;
+    gap: 0.5rem;
+}
+.aside .top .logo h1{
+    font-size: 1.4rem;
+}
+.aside .top .logo img{
+   width: 2rem;
+   height: 2rem;
+   /* border-radius: 100%; */
+}
+.aside .close{
+    display: none;
+    background-color: #BFC7BD;
+}
+
+.aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: #EAECE9; */
+    /* background-color: #F4FEC1; */
+    background-image: linear-gradient(to right top, #555428, #593719, #613a33, #6c3e4d, #3e2044);
+    position: relative;
+    top: 3.1rem;
+    box-shadow:0 0 10px 5px grey ;
+}
+.aside h3{
+    font-weight: 700;
+}
+.aside .sidebar a{
+    display: flex;
+    color: black;
+    margin-left: 2rem;
+    gap: 1.5rem;
+    align-items: center;
+    position: relative;
+    height: 3.5rem;
+    /* transition: all 3000ms ease; */
+}
+.aside .sidebar a:hover{
+    /* transform:  scale(1.2); */
+    color: #f60;
+}
+
+.aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+
+}
+.aside .sidebar .active{
+    color: #f60;
+}
+.message-count{
+    background: green;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    font-size: .9rem;
+    text-align: center;
+    color:aqua;
+}
+
+
+/* ============main section==================================== */
+
+
+main{
+    margin-top: 1.3rem;
+}
+main .date{
+    display: inline-block;
+    background: #908e5f;
+    margin: 1rem 0;
+    padding: 0.9rem;
+    
+    
+}
+main .date input[type='date']{
+    background: #908e5f;
+ 
+   color: aqua;
+  
+}
+main .insights{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+main .insights .insight-box{
+    /* border: 1px solid black; */
+    /* max-width: 195px;
+    height: 170px; */
+    width: 40%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background:white;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+   
+
+}
+main .insights .insight-box:hover{
+    box-shadow: 0 0 10px 15px white;
+    transform: scale(0.8);
+    transition:transform .5s ease-in-out;
+    cursor: pointer;
+}
+main .insights .insight-box h3{
+    color: #908e5f;
+}
+main .insights .insight-box span{
+    font-size: 2.5rem;
+    height: 50%;
+    width: 40%;
+    margin: 1rem 0;
+    /* background-color: green; */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius:100% ;
+ 
+   
+   
+}
+#student-icon{
+    color: white;
+    background:teal;
+    width: 30%;
+     box-shadow: 0 0 5px 5px rgb(32, 23, 55);
+}
+#class-request-icon{
+    color: white;
+    width: 30%;
+    background: rgb(62, 37, 62);
+    box-shadow: 0 0 5px 5px rgb(35, 45, 84);
+}
+#activity-icon{
+    color: white;
+    width: 30%;
+    background: green;
+    box-shadow: 0 0 5px 5px rgb(34, 27, 62);
+}
+#notification-icon{
+    color: white;
+    width: 30%;
+    background: aqua;
+    box-shadow: 0 0 5px 5px rgb(25, 23, 60);
+    /* background: green; */
+}
+
+
+.recent_students{
+    margin-top: 2rem;
+}
+.recent_students h2{
+    margin-bottom: 0.8rem;
+}
+.recent_students table{
+    background: white;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: left;
+ 
+    /* border: 1px solid black; */
+    box-shadow: none;
+}
+.recent_students table:hover{
+    box-shadow: 0 0 3px 8px gainsboro;
+    font-size:20px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition:transform .5s ease-in-out;
+
+}
+table tbody tr:last-child td{
+    border: none;
+}
+table tbody td{
+    height: 2.5rem;
+    border-bottom: 1px solid rgb(212, 208, 208);
+    
+}
+.recent_students a{
+    text-align: center;
+    display: block;
+    margin-top: 0.5rem;
+ font-weight: 900;
+
+}
+.recent_students a:hover{
+    color: black;
+    background-color: #f60;
+    width: 5rem;
+    margin: auto;
+}
+#feeStatus{
+    color: green;
+}
+#feeStatus-red{
+    color: red;
+}
+#details{
+    color:blue;
+}
+/* =============================canvas===================== */
+.chart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chart>div{
+    display:flex ;
+    flex-direction: column;
+}
+.chart>div>p{
+    justify-content: space-between;
+    text-align: left;
+}
+.chart>div>span{
+    justify-content: space-between;
+    align-items: right;
+    text-align: right;
+}
+.boxspan{
+    height: 20px;
+    width: 20px;
+}
+.boxspan::after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: red;
+}
+
+/* =============================================================== */
+.right{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+.right .highlights-box{
+    margin-top: 2rem;
+}
+.right .highlights-box h2{
+    margin-bottom: 1rem;
+}
+.right .highlights-box .highlight{
+    margin-bottom: 1rem;
+}
+
+.right img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.right .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.right .top button{
+    display: none;
+    height: 2rem;
+    cursor: pointer;
+}
+.right .top .theme-change{
+    background-color: grey;
+    border-radius: 4px;
+    width: 3.3rem;
+    height: 2rem;
+    
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 2rem;
+    cursor: pointer;
+
+}
+.theme-change #dark-mode{
+ 
+    
+    height: 2rem;
+    color: white;
+    border-radius: 4px;
+}
+.theme-change #light-mode{
+    /* background: red; */
+    background: blue;
+    height: 2rem;
+    border-radius: 4px;
+}
+.right .top .profile{
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+    text-align: end;
+    margin-top: 1rem;
+    
+}
+.right .highlights-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.right .highlights-box .recent-highlights{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+}
+.right .highlights-box .recent-highlights:hover{
+    transform: scale(0.9);
+    transition:transform .5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 5px white;
+}
+.right .highlights-box .recent-highlights .highlight{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start ;
+    gap: 1rem;
+    
+  
+}
+.right .highlights-box .recent-highlights .highlight .profile-message{
+    width: 12rem;
+    /* padding-bottom: 20px; */
+}
+.right .highlights-box .recent-highlights .highlight .profile-message small{
+    color: green;
+    font-size: .7rem;
+    font-weight:bolder;
+}
+.right .analysis-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    /* background: white; */
+    padding: 1rem;
+    /* padding-bottom: 20px; */
+}
+.right .analysis-box .student-analysis{
+    background:white;
+    width: 100%;
+    border-radius: 30px;
+    padding: 0 3rem;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+    padding-bottom: 20px;
+}
+.right .analysis-box .student-analysis:hover{
+    transform: scale(0.9);
+    transition:transform .5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 5px white;
+}
+.right .analysis-box .student-analysis .attendencebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:pink;
+    border-radius: 15px;
+    margin:2rem 0rem;
+}
+.right .analysis-box .student-analysis .attendencebox .iconbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.right .analysis-box .student-analysis .attendencebox .iconbox p{
+    font-weight: 600;
+}
+#icon-linear{
+    padding-top:1rem;
+}
+.hike-percent{
+    color: green;
+    font-size: .7rem;
+    font-weight: bolder;
+    position: relative;
+    margin-top: -200px;
+}
+.requestbox{
+    display: flex;
+    flex-direction: row;
+    background: pink;
+   
+    padding:1rem;
+    border-radius: 15px;
+}
+.requestbox a{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.close{
+    display: none;
+    font-size: 2rem;
+    position: absolute;
+    right:1rem ;
+    top: 1rem;
+    width: 2rem;
+    text-align: center;
+}
+body .dark_theme_variables{
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+/* ===============================media query================================= */
+
+@media screen and (max-width: 1016px){
+    .container {
+        display: grid;
+       grid-template-columns: 13rem auto;
+    }
+    .right{
+        width:80vw;
+        margin-left: 5rem;
+    }
+    .right .top{
+        position: absolute;
+        top: 0;
+        right: 1rem;
+    }
+    .right .highlights-box{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+    }
+   
+    .analysis-box .student-analysis{
+        width: 900px;
+        height: 100%;
+    }
+    main .chartbox h1{
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .right .top{
+        position: absolute;
+        right: 1rem;
+    }
+}
+@media screen and (max-width: 833px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .right .top .menu-btn{
+        display: block;
+        ;
+    }
+    .container .close{
+        display: flex;
+        position: absolute;
+        top: 1.2rem;
+        z-index: 1000;
+        right: 1rem;
+    }
+    .aside{
+        display: none;
+        width: 200px;
+        position: relative;
+        left: 0;
+        top:0;
+        box-shadow:1px 1px 10px 5px grey ;
+        z-index: 10;
+        height: 100vh;
+        width: 100%;
+        
+    }
+    .aside .top{
+    
+        position: relative;
+        padding: 1rem 0;
+        margin-top: 0;
+        padding-right: 10rem;
+      
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .aside .sidebar{
+        margin-top: 0px;
+        position: absolute;
+        top: 4.1rem;
+        width: 100%;
+        box-shadow: none;
+    }
+    .aside .sidebar a{
+        width: 150px;
+        /* position: relative; */
+        margin: auto;
+        
+    }
+    .aside .sidebar a:last-child{
+        position: absolute;
+        gap: 0;
+        top: -33rem;
+        right:1rem; 
+        width: 80px;
+        background-color: orange;
+        border-radius: 20px;
+    }
+    .aside .sidebar a:last-child:hover{
+        color:green
+    }
+   
+}
+
+@media screen and (max-width: 833px){
+    .right .analysis-box .student-analysis{
+        width: 300px;
+       
+    }
+}
+@media screen and (max-width: 742px){
+    .right .highlights-box{
+        display: flex;
+        flex-direction: column;
+      margin-right: 4rem;
+        
+    }
+    .right .analysis-box .student-analysis{
+        width: 100%;
+       
+    }
+}
+@media screen and (max-width: 510px){
+    .right .top .theme-change{
+        position: absolute;
+        top: 1rem;
+        right: 4.4rem;
+    }
+    .right .top .profile .info{
+        position: absolute;
+        width: 150px;
+        right: 0;
+        top: 4.3rem;
+        /* background: black; */
+    }
+   main .insights {
+    display: flex;
+    flex-direction: column;
+    width: 250%;
+   }
+   main .recent_students table{
+    transform: scale(0.9);
+   }
+}
