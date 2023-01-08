@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    
+    <div id="popup">
+        <h1>popup</h1>
+        <button id="cancel">Close</button>
+        <button id="save"> Save</button>
+    </div>
+</body>
+</html>
+<script>
+    const body = document.querySelector("#body");
+    const pop = document.querySelector("#popup")
+    cancelbtn = document.querySelector("#cancel");
+    savebtn = document.querySelector("#save");
+    cancelbtn.onclick = ()=>{
+        pop.style.display="none"
+    }
+
+savebtn.onclick=()=>{
+    pop.style.display="none";
+}
+body.onclick = ()=>{
+    pop.style.display="none";
+    console.log("b")
+    
+}
+</script>
